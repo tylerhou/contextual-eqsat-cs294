@@ -1,6 +1,14 @@
 # Towards Relational Contextual Equality Saturation
 
-[PDF] (./contextual-eqsat.pdf)
+<style>
+@media (prefers-color-scheme: dark) {
+  .diagram {
+    filter: invert(1);
+  }
+}
+</style>
+
+[PDF](./contextual-eqsat.pdf)
 
 Equality saturation is a powerful technique for program optimization.
 Contextual equality saturation extends this to support rewrite rules that are
@@ -117,7 +125,10 @@ data-numbers="none"><pre class="sourceCode sql"><code class="sourceCode sql"><sp
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="kw">WHERE</span> l.<span class="kw">source</span> <span class="op">=</span> <span class="dv">100</span>;</span></code></pre></div>
 </figure>
 <figure>
-<img height="270" src="assets/default.png" style="margin: auto; display: block;">
+<picture>
+    <source srcset="assets/default_inv.png" media="(prefers-color-scheme: dark)">
+    <img class="diagram" height="270" src="assets/default.png" style="margin: auto; display: block;">
+</picture>
 </figure>
 <figcaption>Figure 1. An example SQL query searching for paths of length three and
 its corresponding initial query plan.</figcaption>
@@ -140,10 +151,16 @@ is _not valid_ to replace $J$ with a hash join.
 <figure id="fig:join-plans-opt">
 <div style="display: flex; flex-direction: row; justify-content: space-evenly;">
 <figure style="margin-inline-start: 0; margin-inline-end: 0;">
-<img height="300" src="assets/pushdown_select.png" style="margin: auto; display: block;">
+<picture>
+    <source srcset="assets/pushdown_select_inv.png" media="(prefers-color-scheme: dark)">
+    <img class="diagram" height="300" src="assets/pushdown_select.png" style="margin: auto; display: block;">
+</picture>
 </figure>
 <figure style="margin-inline-start: 0; margin-inline-end: 0;">
-<img height="300" src="assets/hashjoin.png" style="margin: auto; display: block;">
+<picture>
+    <source srcset="assets/hashjoin_inv.png" media="(prefers-color-scheme: dark)">
+    <img class="diagram" height="300" src="assets/hashjoin.png" style="margin: auto; display: block;">
+</picture>
 </figure>
 </div>
 <figcaption>Figure 2. Optimized versions of the default query plan in <a
@@ -351,7 +368,10 @@ relations on $A$ where $\sim_1 \;\leq\; \sim_2$. Then we have (note $1 \iff 2
     such that $\pi_2 = q \circ \pi_1$ See [Figure 3](#fig:factors).
 
 <figure id="fig:factors" style="float: right; margin-top: 0; margin-bottom: 1em;">
-<img height="150" src="assets/factors.png">
+<picture>
+    <source srcset="assets/factors_inv.png" media="(prefers-color-scheme: dark)">
+    <img class="diagram" height="150" src="assets/factors.png">
+</picture>
 <figcaption>Figure 3. <span class="math inline"><em>π</em><sub>2</sub></span>
 factors via <span class="math inline"><em>π</em><sub>1</sub></span> and
 <span class="math inline"><em>q</em></span>.</figcaption>
