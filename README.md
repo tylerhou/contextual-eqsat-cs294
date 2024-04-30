@@ -1,12 +1,6 @@
 # Towards Relational Contextual Equality Saturation
 
-<style>
-@media (prefers-color-scheme: dark) {
-  .diagram {
-    filter: invert(1);
-  }
-}
-</style>
+Authors: Tyler Hou, Shadaj Laddad, Joe Hellerstein
 
 [PDF](./contextual-eqsat.pdf)
 
